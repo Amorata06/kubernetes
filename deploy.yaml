@@ -23,8 +23,7 @@ spec:
         image: nginx
         ports:
         - containerPort: 8080
-
-      volumeMounts:
+        volumeMounts:
         - name: volume1
           mountPath: "/tmp/volume1"
           readOnly: true
