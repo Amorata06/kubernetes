@@ -1,8 +1,8 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: myapp-rs
-  labels: 
+  labels:
     app: myapp
     type: front-end
 spec:
@@ -18,8 +18,7 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
-replicas: 3
-selector:
-  matchLabels:
-    type: front-end
-  
+  replicas: 3
+  selector:
+    matchLabels:
+      type: front-end
