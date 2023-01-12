@@ -9,4 +9,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/home/amorata/kubernetes"
+    path:  "/tmp/volume1"
